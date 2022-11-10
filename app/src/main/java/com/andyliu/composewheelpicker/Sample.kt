@@ -63,7 +63,7 @@ internal fun TextPicker() {
 
 @Composable
 internal fun LoopingTextPicker() {
-    val startIndex = 3
+    val startIndex = 1
     val count = 10
     val realStartIndex = getLoopingStartIndex(startIndex, count)
     val state = rememberLazyListState(realStartIndex)
