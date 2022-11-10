@@ -13,6 +13,7 @@ Step 2. Add the dependency
         implementation 'com.github.IamCheng5:ComposeWheelPicker:1.1'
 	}
 ## Feature
+### VerticalWheelPicker
     @Composable
     fun VerticalWheelPicker(
         modifier: Modifier = Modifier,
@@ -23,6 +24,17 @@ Step 2. Add the dependency
         onScrollFinish: (index: Int) -> Unit,
         content: @Composable BoxScope.(index: Int) -> Unit
     )
+### HorizontalWheelPicker
+	@Composable
+	fun HorizontalWheelPicker(
+	    modifier: Modifier = Modifier,
+	    count: Int,
+	    state: LazyListState = rememberLazyListState(),
+	    itemWidth: Dp,
+	    visibleItemCount: Int,
+	    onScrollFinish: (index: Int) -> Unit,
+	    content: @Composable BoxScope.(index: Int) -> Unit
+	)
 ## Sample
 ![image](https://user-images.githubusercontent.com/29422378/201000912-1b6c0367-0115-4b62-9ff2-4ea9f472e2a4.png)
 
