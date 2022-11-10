@@ -10,7 +10,7 @@ Step1. Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-        implementation 'com.github.IamCheng5:ComposeWheelPicker:1.0'
+        implementation 'com.github.IamCheng5:ComposeWheelPicker:1.1'
 	}
 ## Feature
     @Composable
